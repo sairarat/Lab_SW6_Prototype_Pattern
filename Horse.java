@@ -11,8 +11,6 @@ public class Horse implements Animal {
         this.sound = "Neigh";
         this.food = "Hay";
     }
-
-    @Override
     public void makeSound() {
         System.out.println(this.sound);
     }
@@ -25,15 +23,6 @@ public class Horse implements Animal {
     @Override
     public String getType() {
         return this.type;
-    }
-
-    // Getters and Setters
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Integer getLegs() {
@@ -58,5 +47,13 @@ public class Horse implements Animal {
 
     public void setFood(String food) {
         this.food = food;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
