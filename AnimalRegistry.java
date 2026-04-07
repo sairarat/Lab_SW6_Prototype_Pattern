@@ -9,15 +9,15 @@ public class AnimalRegistry{
         horsePrototype = new Horse();
     }
 
-    public Animal createSheep() {
-        return sheepPrototype.clone();
+    public Sheep createSheep() {
+        return (Sheep) sheepPrototype.clone();
     }
 
-    public Animal createCow() {
-        return cowPrototype.clone();
+    public Cow createCow() {
+        return (Cow) cowPrototype.clone();
     }
 
-    public Animal createHorse() {
-        return horsePrototype.clone();
+    public Horse createHorse() {
+        return (Horse) horsePrototype.clone();
     }
 }
