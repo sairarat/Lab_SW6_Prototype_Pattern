@@ -11,8 +11,6 @@ public class Sheep implements Animal{
         this.sound = "Baa";
         this.food = "Grass";
     }
-
-    @Override
     public void makeSound() {
         System.out.println(this.sound);
     }
@@ -25,15 +23,6 @@ public class Sheep implements Animal{
     @Override
     public String getType() {
         return this.type;
-    }
-
-    // Getters and Setters
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Integer getLegs() {
@@ -58,6 +47,14 @@ public class Sheep implements Animal{
 
     public void setFood(String food) {
         this.food = food;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setType(String type) {
